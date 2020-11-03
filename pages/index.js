@@ -1,13 +1,10 @@
-import React from 'react';
-import TopSection from '../src/TopSection';
-import {Typography} from '@material-ui/core';
-import Profile from '../src/Profile';
+import React from "react";
+import TopSection from "../src/TopSection";
 
 const Index = () => {
   return (
     <div>
       <TopSection />
-      <Profile />
     </div>
   );
 };
