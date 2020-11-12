@@ -50,35 +50,23 @@ const ProjectSection = ({ reff }) => {
                 githubURL={"https://github.com/thegauravthakur/clister-reactjs"}
                 liveURL={"https://clister.in"}
                 footer={["NextJs, ReactJs", "firebase"]}
-                image="https://res.cloudinary.com/gauravthakur/image/upload/v1601294554/clister_p57n0n.png"
+                image="https://res.cloudinary.com/gauravthakur/image/upload/v1605194767/clister-web_uhyvtm.png"
               />
             </Grid>
             <Grid sm={6} md={4} item>
               <CustomCard
-                image="https://res.cloudinary.com/gauravthakur/image/upload/v1601294555/bruteforce_hvc488.png"
+                image="https://res.cloudinary.com/gauravthakur/image/upload/v1605195398/C-Lister_clean_listing_app_2_1_cvxkh9.png"
                 githubURL={
                   "https://github.com/thegauravthakur/lpu-OPT-Brute-force-attack"
                 }
                 title="LPU Opt Finder"
                 description={
-                  "This was a fun project in which I used the brute-force technique to find the password of an OPTs as they LPU used to repeat their passwords a lot."
+                  "This was a fun project in which I used the brute-force technique to find the password of OPTs as they LPU used the same passwords repeatedly."
                 }
                 footer={["Selenium", "Python"]}
               />
             </Grid>
-            <Grid sm={6} md={4} item>
-              <CustomCard
-                title="Movie Ticker Generator"
-                description={
-                  "In this movie ticker generator, you can book tickets and also review them later. I have used STL for storing also, Many of C++14 features are used like range-based for loops and auto keyword."
-                }
-                githubURL={
-                  "https://github.com/thegauravthakur/movieTicketGenerator"
-                }
-                footer={["C++"]}
-                image="https://res.cloudinary.com/gauravthakur/image/upload/v1601294558/movie-ticker_rmsnin.png"
-              />
-            </Grid>
+
             <Grid sm={6} md={4} item>
               <CustomCard
                 title="CLister (Android App)"
@@ -90,7 +78,7 @@ const ProjectSection = ({ reff }) => {
                 }
                 liveURL={"https://bit.ly/clister"}
                 footer={["React Native"]}
-                image="https://res.cloudinary.com/gauravthakur/image/upload/v1601435586/Minimalist_21st_Birthday_Card_okxwlr.jpg"
+                image="https://res.cloudinary.com/gauravthakur/image/upload/v1605194948/C-Lister_clean_listing_app_1_rnhwqj.png"
               />
             </Grid>
             <Grid sm={6} md={4} item>
@@ -104,7 +92,7 @@ const ProjectSection = ({ reff }) => {
                 }
                 liveURL={"https://gauravthakur.in"}
                 footer={["NextJs", "Material UI"]}
-                image="https://res.cloudinary.com/gauravthakur/image/upload/v1601435112/Minimalist_21st_Birthday_Card_mdsjp2.png"
+                image="https://res.cloudinary.com/gauravthakur/image/upload/v1605195058/portfolio_dmrj94.png"
               />
             </Grid>
             <Grid sm={6} md={4} item>
@@ -117,7 +105,20 @@ const ProjectSection = ({ reff }) => {
                 githubURL={
                   "https://github.com/thegauravthakur/scripts/blob/master/whatsappbot.py"
                 }
-                image="https://res.cloudinary.com/gauravthakur/image/upload/v1601435823/Minimalist_21st_Birthday_Card_1_eu5g0q.jpg"
+                image="https://res.cloudinary.com/gauravthakur/image/upload/v1605196266/Untitled_design_y848ht.png"
+              />
+            </Grid>
+            <Grid sm={6} md={4} item>
+              <CustomCard
+                title="Movie Ticker Generator"
+                description={
+                  "In this movie ticker generator, you can book tickets and also review them later. I have used STL for storing. Also, many of C++14 features has been used like range-based for loops and auto keyword."
+                }
+                githubURL={
+                  "https://github.com/thegauravthakur/movieTicketGenerator"
+                }
+                footer={["C++"]}
+                image="https://res.cloudinary.com/gauravthakur/image/upload/v1605197911/Untitled_design_1_dlx00g.png"
               />
             </Grid>
           </Grid>

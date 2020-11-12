@@ -68,7 +68,7 @@ const Profile = ({ reff }) => {
               Computer Science from Lovely Professional University. I love doing
               competitive programming and building new stuff. In the past few
               years, I've spent most of the time exploring different sides of
-              programming. I started with competitive programming. Although I
+              programming. I started with competitive programming, although I
               didn't get much success in it. Later, I shifted to development. I
               explored many frameworks like Flutter and React Native. Now, I've
               finally settled for web development and I'm loving it. Most of the
