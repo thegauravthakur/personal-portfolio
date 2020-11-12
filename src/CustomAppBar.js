@@ -45,9 +45,48 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
             </IconButton>
           ) : (
             <div>
-              <Button color="inherit">About</Button>
-              <Button color="inherit">Projects</Button>
-              <Button color="inherit">Contact Me</Button>
+              <Button
+                color="inherit"
+                onClick={() => {
+                  setOpen(false);
+                  setTimeout(() => {
+                    window.scrollTo({
+                      behavior: "smooth",
+                      top: profileRef.current.offsetTop,
+                    });
+                  }, 10);
+                }}
+              >
+                About
+              </Button>
+              <Button
+                color="inherit"
+                onClick={() => {
+                  setOpen(false);
+                  setTimeout(() => {
+                    window.scrollTo({
+                      behavior: "smooth",
+                      top: projectRef.current.offsetTop,
+                    });
+                  }, 10);
+                }}
+              >
+                Projects
+              </Button>
+              <Button
+                color="inherit"
+                onClick={() => {
+                  setOpen(false);
+                  setTimeout(() => {
+                    window.scrollTo({
+                      behavior: "smooth",
+                      top: skillRef.current.offsetTop,
+                    });
+                  }, 10);
+                }}
+              >
+                Skills
+              </Button>
             </div>
           )}
         </Toolbar>
