@@ -7,11 +7,12 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.56",
     "clsx": "latest",
-    "next": "latest",
+    "next": "v10.0.2-canary.14",
     "prop-types": "latest",
     "react": "latest",
     "react-div-100vh": "^0.5.6",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-simple-typewriter": "^1.0.13"
   },
   "scripts": {
     "dev": "next",

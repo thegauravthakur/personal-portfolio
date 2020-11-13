@@ -3,6 +3,7 @@ import { Grid, Typography, Paper, IconButton } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LaunchIcon from "@material-ui/icons/Launch";
+import Image from "next/image";
 const useStyle = makeStyles((theme) => ({
   root: {
     border: "1px solid white",
@@ -39,6 +40,8 @@ const CustomCard = ({
   footer,
   githubURL,
   liveURL,
+  width,
+  height,
 }) => {
   let text = "";
   for (let i = 0; i < footer.length; i++) {
@@ -54,7 +57,13 @@ const CustomCard = ({
     <Paper className={classes.root}>
       <Grid className={classes.gridStyle} direction="column" container>
         <Grid item>
-          <img height={"100%"} width="100%" src={image} alt="clister" />
+          <Image
+            objectFit={"fill"}
+            width={width}
+            height={height}
+            src={image}
+            alt="clister"
+          />
         </Grid>
         <Grid item>
           <Typography className={classes.title} variant="h5" align="center">

@@ -43,6 +43,8 @@ const ProjectSection = ({ reff }) => {
           >
             <Grid sm={6} md={4} item>
               <CustomCard
+                width={1897}
+                height={990}
                 title="CLister (Web App)"
                 description={
                   "CLister will make you more organized and productive. You can manage all your related tasks in sections and create different sections for a different type of chores."
@@ -50,12 +52,14 @@ const ProjectSection = ({ reff }) => {
                 githubURL={"https://github.com/thegauravthakur/clister-reactjs"}
                 liveURL={"https://clister.in"}
                 footer={["NextJs, ReactJs", "firebase"]}
-                image="https://res.cloudinary.com/gauravthakur/image/upload/v1605194767/clister-web_uhyvtm.png"
+                image="/images/clister-website.png"
               />
             </Grid>
             <Grid sm={6} md={4} item>
               <CustomCard
-                image="https://res.cloudinary.com/gauravthakur/image/upload/v1605195398/C-Lister_clean_listing_app_2_1_cvxkh9.png"
+                width={1024}
+                height={500}
+                image="/images/lpu-opt-finder.png"
                 githubURL={
                   "https://github.com/thegauravthakur/lpu-OPT-Brute-force-attack"
                 }
@@ -78,7 +82,9 @@ const ProjectSection = ({ reff }) => {
                 }
                 liveURL={"https://bit.ly/clister"}
                 footer={["React Native"]}
-                image="https://res.cloudinary.com/gauravthakur/image/upload/v1605194948/C-Lister_clean_listing_app_1_rnhwqj.png"
+                image="/images/clister-android-app.png"
+                width={1024}
+                height={500}
               />
             </Grid>
             <Grid sm={6} md={4} item>
@@ -92,7 +98,9 @@ const ProjectSection = ({ reff }) => {
                 }
                 liveURL={"https://gauravthakur.in"}
                 footer={["NextJs", "Material UI"]}
-                image="https://res.cloudinary.com/gauravthakur/image/upload/v1605195058/portfolio_dmrj94.png"
+                image="/images/portfolio-website.png"
+                width={1897}
+                height={988}
               />
             </Grid>
             <Grid sm={6} md={4} item>
@@ -105,7 +113,9 @@ const ProjectSection = ({ reff }) => {
                 githubURL={
                   "https://github.com/thegauravthakur/scripts/blob/master/whatsappbot.py"
                 }
-                image="https://res.cloudinary.com/gauravthakur/image/upload/v1605196266/Untitled_design_y848ht.png"
+                image="/images/whatsApp-bot.png"
+                width={1024}
+                height={500}
               />
             </Grid>
             <Grid sm={6} md={4} item>
@@ -118,7 +128,9 @@ const ProjectSection = ({ reff }) => {
                   "https://github.com/thegauravthakur/movieTicketGenerator"
                 }
                 footer={["C++"]}
-                image="https://res.cloudinary.com/gauravthakur/image/upload/v1605197911/Untitled_design_1_dlx00g.png"
+                image="/images/movie-ticket-generator.png"
+                height={500}
+                width={1024}
               />
             </Grid>
           </Grid>

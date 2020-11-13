@@ -6,6 +6,8 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Image from "next/image";
 
+import Typewriter from "react-simple-typewriter";
+import "react-simple-typewriter/dist/index.css";
 const Profile = ({ reff }) => {
   const matches = useMediaQuery("(min-width:600px)");
   const useStyle = makeStyles((theme) => ({
@@ -27,6 +29,7 @@ const Profile = ({ reff }) => {
       fontFamily: "Fredoka One, cursive",
     },
     description: {
+      display: "inline-block",
       color: "#adadad",
       fontFamily: "Open Sans, serif",
     },
@@ -72,8 +75,22 @@ const Profile = ({ reff }) => {
               didn't get much success in it. Later, I shifted to development. I
               explored many frameworks like Flutter and React Native. Now, I've
               finally settled for web development and I'm loving it. Most of the
-              time, you can see me either building something or solving some
-              algorithmic problem.
+              time, you can see me
+              <span style={{ color: "white", fontWeight: "bold" }}>
+                <Typewriter
+                  loop
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                  words={[
+                    " working on a open source project",
+                    " solving some algorithmic problem.",
+                    " learning a new technology",
+                  ]}
+                />
+              </span>
             </Typography>
           </Grid>
           <Grid sm={1} item />

@@ -39,13 +39,14 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
               edge="start"
               className={classes.menuButton}
               color="inherit"
-              aria-label="menu"
+              aria-label="menu button"
             >
               <MenuIcon />
             </IconButton>
           ) : (
             <div>
               <Button
+                aria-label="this button will take you to about section"
                 color="inherit"
                 onClick={() => {
                   setOpen(false);
@@ -60,6 +61,7 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
                 About
               </Button>
               <Button
+                aria-label="this button will take you to project section"
                 color="inherit"
                 onClick={() => {
                   setOpen(false);
@@ -74,6 +76,7 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
                 Projects
               </Button>
               <Button
+                aria-label="this button will take you to skill section"
                 color="inherit"
                 onClick={() => {
                   setOpen(false);
