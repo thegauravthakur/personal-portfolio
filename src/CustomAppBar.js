@@ -28,7 +28,7 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
 
   return (
     <div className={classes.root}>
-      <AppBar color={"primary"} position="relative">
+      <AppBar color={"primary"} position="fixed">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             Gaurav Thakur

@@ -3262,11 +3262,6 @@ react-refresh@0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
-react-simple-typewriter@^1.0.13:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/react-simple-typewriter/-/react-simple-typewriter-1.0.13.tgz#3ff5e9c8a77e0208d0b6dfe2d1893ca6b93b105f"
-  integrity sha512-ri9LwuEVMqdUc19vxI7Lp9LfbpASX4lWvoI7lNBPkjjX58HVvCOw5wDhu2YFOu3ME3+f1hVuCvcpK5ODDTF8jA==
-
 react-transition-group@^4.4.0:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.1.tgz#63868f9325a38ea5ee9535d828327f85773345c9"

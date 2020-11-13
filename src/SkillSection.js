@@ -10,7 +10,12 @@ import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 import Avatar from "@material-ui/core/Avatar";
 import List from "@material-ui/core/List";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-
+import withStyles from "@material-ui/core/styles/withStyles";
+const StyledRating = withStyles({
+  iconFilled: {
+    color: "#ebebeb",
+  },
+})(Rating);
 export default function SkillSection({ reff }) {
   const defaultProps = {
     bgcolor: "#394867",
@@ -93,7 +98,8 @@ export default function SkillSection({ reff }) {
                     </ListItemAvatar>
                     <ListItemText primary={skill.name} />
                     <ListItemSecondaryAction>
-                      <Rating
+                      <StyledRating
+                        color={"white"}
                         name="half-rating-read"
                         defaultValue={skill.rating}
                         precision={0.5}

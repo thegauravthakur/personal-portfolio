@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import { Paper, Grid, Typography, Button } from "@material-ui/core";
-import CustomAppBar from "./CustomAppBar";
+import { Grid, Typography } from "@material-ui/core";
 import { use100vh } from "react-div-100vh";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import theme from "./theme";
@@ -14,11 +13,11 @@ const TopSection = () => {
     console.log("the height is", height);
   }, [height]);
   return (
-    <div>
+    <div id={"back-to-top-anchor"}>
       <Grid
         className={"area"}
         container
-        style={{ minHeight: height ? height - 64 : "100vh" }}
+        style={{ minHeight: height ? height : "100vh" }}
       >
         <Grid item>
           <ul className="circles">

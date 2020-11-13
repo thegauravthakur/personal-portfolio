@@ -11,8 +11,7 @@
     "prop-types": "latest",
     "react": "latest",
     "react-div-100vh": "^0.5.6",
-    "react-dom": "latest",
-    "react-simple-typewriter": "^1.0.13"
+    "react-dom": "latest"
   },
   "scripts": {
     "dev": "next",

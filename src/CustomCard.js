@@ -28,7 +28,8 @@ const useStyle = makeStyles((theme) => ({
     padding: ".75rem 1.25rem",
     backgroundColor: "rgba(0,0,0,.03)",
     borderTop: "1px solid rgba(0,0,0,.125)",
-    color: "#6c757d!important",
+    color: "#404040",
+
     textAlign: "center",
   },
 }));
@@ -73,6 +74,7 @@ const CustomCard = ({
             {githubURL ? (
               <Grid item>
                 <IconButton
+                  aria-label={"launch the project"}
                   onClick={() => (window.location.href = githubURL)}
                   size={"small"}
                 >
@@ -83,6 +85,7 @@ const CustomCard = ({
             {liveURL ? (
               <Grid item>
                 <IconButton
+                  aria-label={"launch the project"}
                   onClick={() => (window.location.href = liveURL)}
                   size={"small"}
                 >
@@ -96,7 +99,9 @@ const CustomCard = ({
           <Typography className={classes.description}>{description}</Typography>
         </Grid>
         <Grid className={classes.footer} item>
-          <Typography>{text}</Typography>
+          <Typography style={{ fontSize: 13, fontWeight: "500" }}>
+            {text}
+          </Typography>
         </Grid>
       </Grid>
     </Paper>
