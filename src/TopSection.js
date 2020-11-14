@@ -45,7 +45,10 @@ const TopSection = () => {
                 </Typography>
               </Grid>
               <Grid item>
-                <Typography variant={!matches ? "body1" : "h5"}>
+                <Typography
+                  style={{ fontSize: matches ? 24 : null }}
+                  variant={!matches ? "body1" : "h3"}
+                >
                   Nothing much, just a casual learner who loves to code.
                 </Typography>
               </Grid>
