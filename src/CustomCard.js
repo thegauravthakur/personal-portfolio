@@ -16,12 +16,14 @@ const useStyle = makeStyles((theme) => ({
   },
   title: {
     padding: "10px",
-    fontFamily: "Open Sans, serif",
-    color: "teal",
+    fontSize: "18px",
+    fontFamily: "Fredoka One, cursive",
+    color: "#394867",
   },
   description: {
     fontFamily: "Open Sans, serif",
-    padding: "10px",
+    padding: "9px",
+    fontSize: "0.9rem",
     color: "black",
   },
   footer: {
@@ -63,11 +65,11 @@ const CustomCard = ({
             width={width}
             height={height}
             src={image}
-            alt="clister"
+            alt="CLister"
           />
         </Grid>
         <Grid item>
-          <Typography className={classes.title} variant="h5" align="center">
+          <Typography className={classes.title} align="center">
             {title}
           </Typography>
           <Grid container justify={"space-evenly"}>
@@ -107,5 +109,4 @@ const CustomCard = ({
     </Paper>
   );
 };
-
 export default CustomCard;

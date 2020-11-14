@@ -7,7 +7,7 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.56",
     "clsx": "latest",
-    "next": "v10.0.2-canary.14",
+    "next": "v10.0.2-canary.15",
     "prop-types": "latest",
     "react": "latest",
     "react-div-100vh": "^0.5.6",

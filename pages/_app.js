@@ -5,6 +5,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../src/theme";
 import "../src/styles.css";
+
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 
@@ -24,6 +25,33 @@ export default function MyApp(props) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
+        <title>Gaurav Thakur</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content={
+            "Welcome to Gaurav Thakur's personal space on the Internet. He loves doing competitive programming and building new stuff in his free time."
+          }
+        />
+        <meta charSet="utf-8" />
+        <meta property="og:title" content="Gaurav Thakur" key={"ogtitle"} />
+        <meta
+          property="og:url"
+          content="https://gauravthakur.in"
+          key={"ogurl"}
+        />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/gauravthakur/image/upload/v1604414321/IMG_20171227_134627_365_bjt5on.jpg"
+          key={"ogimage"}
+        />
+        <meta property="og:type" content="website" key={"ogtype"} />
+        <meta
+          property="og:description"
+          content="Welcome to Gaurav Thakur's personal space on the Internet. He loves doing competitive programming and building new stuff in his free time."
+          key={"ogdescription"}
+        />
+        <meta property="og:locale" content="en_GB" key={"oglocale"} />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

@@ -11,6 +11,7 @@ import Avatar from "@material-ui/core/Avatar";
 import List from "@material-ui/core/List";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import withStyles from "@material-ui/core/styles/withStyles";
+import Image from "next/image";
 const StyledRating = withStyles({
   iconFilled: {
     color: "#ebebeb",
@@ -28,40 +29,46 @@ export default function SkillSection({ reff }) {
   const skills = [
     {
       name: "C++",
-      imageLink:
-        "https://res.cloudinary.com/gauravthakur/image/upload/v1605154045/icons8-c_-50_ecidtj.png",
+      imageLink: "/icons/c++.png",
       rating: 5,
+      width: 50,
+      height: 50,
     },
 
     {
       name: "JavaScript",
-      imageLink:
-        "https://res.cloudinary.com/gauravthakur/image/upload/v1605154992/icons8-javascript-logo-50_b0cpmd.png",
+      imageLink: "/icons/JavaScript.png",
       rating: 4,
+      width: 50,
+      height: 50,
     },
     {
       name: "C",
-      imageLink:
-        "https://res.cloudinary.com/gauravthakur/image/upload/v1605156883/icons8-c-programming-64_gwfvk3.png",
+      imageLink: "/icons/c.png",
       rating: 5,
+      width: 64,
+      height: 64,
     },
     {
       name: "HTML",
-      imageLink:
-        "https://res.cloudinary.com/gauravthakur/image/upload/v1605154438/icons8-html-5-50_ruya7l.png",
+      imageLink: "/icons/html.png",
       rating: 3.5,
+      width: 50,
+      height: 50,
     },
     {
       name: "ReactJs",
-      imageLink:
-        "https://res.cloudinary.com/gauravthakur/image/upload/v1605155251/icons8-react-100_2_jknkmk.png",
+      imageLink: "/icons/react.png",
       rating: 4,
+      width: 100,
+      height: 100,
     },
     {
       name: "React Native",
-      imageLink:
-        "https://res.cloudinary.com/gauravthakur/image/upload/v1605155251/icons8-react-100_2_jknkmk.png",
+      imageLink: "/icons/react.png",
       rating: 3,
+      width: 100,
+      height: 100,
     },
   ];
   return (
@@ -94,7 +101,16 @@ export default function SkillSection({ reff }) {
                 <List dense>
                   <ListItem button>
                     <ListItemAvatar>
-                      <Avatar alt={skill.name} src={skill.imageLink} />
+                      <Avatar
+                        alt={skill.name}
+                        style={{ backgroundColor: "transparent" }}
+                      >
+                        <Image
+                          src={skill.imageLink}
+                          height={skill.height}
+                          width={skill.width}
+                        />
+                      </Avatar>
                     </ListItemAvatar>
                     <ListItemText primary={skill.name} />
                     <ListItemSecondaryAction>
