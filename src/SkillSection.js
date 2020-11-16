@@ -12,6 +12,8 @@ import List from "@material-ui/core/List";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
+
 const StyledRating = withStyles({
   iconFilled: {
     color: "#ebebeb",
@@ -81,50 +83,54 @@ export default function SkillSection({ reff }) {
         paddingBottom: 50,
       }}
     >
-      <Typography
-        align={"center"}
-        variant={"h4"}
-        style={{
-          color: "#394867",
-          fontFamily: "Fredoka One, cursive",
-          marginBottom: 25,
-        }}
-      >
-        Skills
-      </Typography>
+      <Fade triggerOnce direction={"up"}>
+        <Typography
+          align={"center"}
+          variant={"h4"}
+          style={{
+            color: "#394867",
+            fontFamily: "Fredoka One, cursive",
+            marginBottom: 25,
+          }}
+        >
+          Skills
+        </Typography>
+      </Fade>
       <Grid container>
         <Grid item xs={1} />
         <Grid container item xs={10}>
-          {skills.map((skill) => (
+          {skills.map((skill, index) => (
             <Grid xs={12} sm={6} md={4} item>
-              <Box borderRadius={16} {...defaultProps}>
-                <List dense>
-                  <ListItem button>
-                    <ListItemAvatar>
-                      <Avatar
-                        alt={skill.name}
-                        style={{ backgroundColor: "transparent" }}
-                      >
-                        <Image
-                          src={skill.imageLink}
-                          height={skill.height}
-                          width={skill.width}
+              <Fade triggerOnce direction={"up"} cascade>
+                <Box borderRadius={16} {...defaultProps}>
+                  <List dense>
+                    <ListItem button>
+                      <ListItemAvatar>
+                        <Avatar
+                          alt={skill.name}
+                          style={{ backgroundColor: "transparent" }}
+                        >
+                          <Image
+                            src={skill.imageLink}
+                            height={skill.height}
+                            width={skill.width}
+                          />
+                        </Avatar>
+                      </ListItemAvatar>
+                      <ListItemText primary={skill.name} />
+                      <ListItemSecondaryAction>
+                        <StyledRating
+                          color={"white"}
+                          name="half-rating-read"
+                          defaultValue={skill.rating}
+                          precision={0.5}
+                          readOnly
                         />
-                      </Avatar>
-                    </ListItemAvatar>
-                    <ListItemText primary={skill.name} />
-                    <ListItemSecondaryAction>
-                      <StyledRating
-                        color={"white"}
-                        name="half-rating-read"
-                        defaultValue={skill.rating}
-                        precision={0.5}
-                        readOnly
-                      />
-                    </ListItemSecondaryAction>
-                  </ListItem>
-                </List>
-              </Box>
+                      </ListItemSecondaryAction>
+                    </ListItem>
+                  </List>
+                </Box>
+              </Fade>
             </Grid>
           ))}
         </Grid>

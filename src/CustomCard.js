@@ -4,6 +4,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LaunchIcon from "@material-ui/icons/Launch";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
+
 const useStyle = makeStyles((theme) => ({
   root: {
     border: "1px solid white",
@@ -45,6 +47,7 @@ const CustomCard = ({
   liveURL,
   width,
   height,
+  delay,
 }) => {
   let text = "";
   for (let i = 0; i < footer.length; i++) {
@@ -57,56 +60,65 @@ const CustomCard = ({
   }
   const classes = useStyle();
   return (
-    <Paper className={classes.root}>
-      <Grid className={classes.gridStyle} direction="column" container>
-        <Grid item>
-          <Image
-            objectFit={"fill"}
-            width={width}
-            height={height}
-            src={image}
-            alt="CLister"
-          />
-        </Grid>
-        <Grid item>
-          <Typography className={classes.title} align="center">
-            {title}
-          </Typography>
-          <Grid container justify={"space-evenly"}>
-            {githubURL ? (
-              <Grid item>
-                <IconButton
-                  aria-label={"launch the project"}
-                  onClick={() => (window.location.href = githubURL)}
-                  size={"small"}
-                >
-                  <GitHubIcon color={"primary"} />
-                </IconButton>
-              </Grid>
-            ) : null}
-            {liveURL ? (
-              <Grid item>
-                <IconButton
-                  aria-label={"launch the project"}
-                  onClick={() => (window.location.href = liveURL)}
-                  size={"small"}
-                >
-                  <LaunchIcon color={"primary"} />
-                </IconButton>
-              </Grid>
-            ) : null}
+    <Fade
+      style={{ height: "100%" }}
+      triggerOnce
+      direction={"up"}
+      delay={delay * 100}
+    >
+      <Paper className={classes.root}>
+        <Grid className={classes.gridStyle} direction="column" container>
+          <Grid item>
+            <Image
+              objectFit={"fill"}
+              width={width}
+              height={height}
+              src={image}
+              alt="CLister"
+            />
+          </Grid>
+          <Grid item>
+            <Typography className={classes.title} align="center">
+              {title}
+            </Typography>
+            <Grid container justify={"space-evenly"}>
+              {githubURL ? (
+                <Grid item>
+                  <IconButton
+                    aria-label={"launch the project"}
+                    onClick={() => window.open(githubURL, "_blank")}
+                    size={"small"}
+                  >
+                    <GitHubIcon color={"primary"} />
+                  </IconButton>
+                </Grid>
+              ) : null}
+              {liveURL ? (
+                <Grid item>
+                  <IconButton
+                    aria-label={"launch the project"}
+                    onClick={() => window.open(liveURL, "_blank")}
+                    size={"small"}
+                  >
+                    <LaunchIcon color={"primary"} />
+                  </IconButton>
+                </Grid>
+              ) : null}
+            </Grid>
+          </Grid>
+          <Grid style={{ flex: 1 }} item>
+            <Typography className={classes.description}>
+              {description}
+            </Typography>
+          </Grid>
+          <Grid className={classes.footer} item>
+            <Typography style={{ fontSize: 13, fontWeight: "500" }}>
+              {text}
+            </Typography>
           </Grid>
         </Grid>
-        <Grid style={{ flex: 1 }} item>
-          <Typography className={classes.description}>{description}</Typography>
-        </Grid>
-        <Grid className={classes.footer} item>
-          <Typography style={{ fontSize: 13, fontWeight: "500" }}>
-            {text}
-          </Typography>
-        </Grid>
-      </Grid>
-    </Paper>
+      </Paper>
+    </Fade>
   );
 };
 export default CustomCard;

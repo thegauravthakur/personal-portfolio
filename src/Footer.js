@@ -52,7 +52,12 @@ const Footer = () => {
             }}
           >
             © 2020 Copyright:
-            <Link href={"https://gauravthaku.in"} color={"textPrimary"}>
+            <Link
+              href={"https://gauravthakur.in"}
+              target="_blank"
+              rel="noopener noreferrer"
+              color={"textPrimary"}
+            >
               <b> Gaurav Thakur </b>
             </Link>
             | Made with

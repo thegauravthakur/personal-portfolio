@@ -6,6 +6,8 @@ import theme from "./theme";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/Email";
+import { Fade } from "react-awesome-reveal";
+
 const TopSection = () => {
   const height = use100vh();
   const matches = useMediaQuery("(min-width:600px)");
@@ -36,58 +38,68 @@ const TopSection = () => {
         <Grid item container style={{ backgroundColor: theme.palette.primary }}>
           <Grid container justify={"center"} item direction={"column"}>
             <Grid item>
-              <Grid style={{ marginBottom: 10 }} item>
-                <Typography variant={!matches ? "h3" : "h2"}>Hi,</Typography>
-              </Grid>
-              <Grid style={{ marginBottom: 10 }} item>
-                <Typography variant={!matches ? "h3" : "h2"}>
-                  I'm Gaurav {matches ? "Thakur" : null}
-                </Typography>
-              </Grid>
-              <Grid item>
-                <Typography
-                  style={{ fontSize: matches ? 24 : null }}
-                  variant={!matches ? "body1" : "h3"}
-                >
-                  Nothing much, just a casual learner who loves to code.
-                </Typography>
-              </Grid>
+              <Fade
+                triggerOnce
+                cascade
+                direction={"up"}
+                delay={800}
+                duration={500}
+              >
+                <Grid style={{ marginBottom: 10 }} item>
+                  <Typography variant={!matches ? "h3" : "h2"}>Hi,</Typography>
+                </Grid>
+                <Grid style={{ marginBottom: 10 }} item>
+                  <Typography variant={!matches ? "h3" : "h2"}>
+                    I'm Gaurav {matches ? "Thakur" : null}
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography
+                    style={{ fontSize: matches ? 24 : null }}
+                    variant={!matches ? "body1" : "h3"}
+                  >
+                    Nothing much, just a casual learner who loves to code.
+                  </Typography>
+                </Grid>
+              </Fade>
             </Grid>
-            <Grid item container style={{ marginTop: 100 }}>
-              <Grid item>
-                <Typography
-                  style={{ borderBottom: "1px solid white" }}
-                  variant={"overline"}
-                >
-                  Contact Me
-                </Typography>
-              </Grid>
-              <Grid item container>
-                <Grid style={{ position: "absolute" }} item>
-                  <TwitterIcon
-                    onClick={() =>
-                      window.open("https://twitter.com/gauravcodes", "_blank")
-                    }
-                    style={{ marginRight: 15, cursor: "pointer" }}
-                  />
-                  <GitHubIcon
-                    onClick={() =>
-                      window.open(
-                        "https://github.com/thegauravthakur",
-                        "_blank"
-                      )
-                    }
-                    style={{ marginRight: 15, cursor: "pointer" }}
-                  />
-                  <EmailIcon
-                    onClick={() =>
-                      (window.location.href = "mailto:gthakur581@email.com")
-                    }
-                    style={{ cursor: "pointer" }}
-                  />
+            <Fade triggerOnce direction={"up"} delay={1100}>
+              <Grid item container style={{ marginTop: 100 }}>
+                <Grid item>
+                  <Typography
+                    style={{ borderBottom: "1px solid white" }}
+                    variant={"overline"}
+                  >
+                    Contact Me
+                  </Typography>
+                </Grid>
+                <Grid item container>
+                  <Grid style={{ position: "absolute" }} item>
+                    <TwitterIcon
+                      onClick={() =>
+                        window.open("https://twitter.com/gauravcodes", "_blank")
+                      }
+                      style={{ marginRight: 15, cursor: "pointer" }}
+                    />
+                    <GitHubIcon
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/thegauravthakur",
+                          "_blank"
+                        )
+                      }
+                      style={{ marginRight: 15, cursor: "pointer" }}
+                    />
+                    <EmailIcon
+                      onClick={() =>
+                        (window.location.href = "mailto:gthakur581@email.com")
+                      }
+                      style={{ cursor: "pointer" }}
+                    />
+                  </Grid>
                 </Grid>
               </Grid>
-            </Grid>
+            </Fade>
           </Grid>
         </Grid>
       </Grid>

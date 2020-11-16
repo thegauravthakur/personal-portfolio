@@ -12,6 +12,7 @@ import MenuList from "@material-ui/core/MenuList";
 import MenuItem from "@material-ui/core/MenuItem";
 import { useRouter } from "next/router";
 import { Grid } from "@material-ui/core";
+import { Fade } from "react-awesome-reveal";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -33,11 +34,11 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
     <div className={classes.root}>
       <AppBar color={"primary"} position="fixed">
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
-            Gaurav Thakur
-          </Typography>
+          <Fade triggerOnce direction="down" className={classes.title}>
+            <Typography variant="h6">Gaurav Thakur</Typography>
+          </Fade>
           {!matches ? (
-            <div>
+            <Fade triggerOnce direction={"down"} cascade duration={500}>
               <Button
                 style={{ marginRight: 20 }}
                 variant={"outlined"}
@@ -57,9 +58,9 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
               >
                 <MenuIcon />
               </IconButton>
-            </div>
+            </Fade>
           ) : (
-            <div>
+            <Fade triggerOnce direction={"down"} cascade duration={500}>
               <Button
                 aria-label="this button will take you to about section"
                 color="inherit"
@@ -75,6 +76,7 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
               >
                 About
               </Button>
+
               <Button
                 aria-label="this button will take you to project section"
                 color="inherit"
@@ -90,6 +92,7 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
               >
                 Projects
               </Button>
+
               <Button
                 aria-label="this button will take you to skill section"
                 color="inherit"
@@ -105,6 +108,7 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
               >
                 Skills
               </Button>
+
               <Button
                 style={{ marginLeft: 10 }}
                 variant={"outlined"}
@@ -115,7 +119,7 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
               >
                 Resume
               </Button>
-            </div>
+            </Fade>
           )}
         </Toolbar>
 

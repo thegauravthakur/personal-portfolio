@@ -43,6 +43,7 @@ const ProjectSection = ({ reff }) => {
           >
             <Grid sm={6} md={4} item>
               <CustomCard
+                delay={1}
                 width={1897}
                 height={990}
                 title="CLister (Web App)"
@@ -57,6 +58,7 @@ const ProjectSection = ({ reff }) => {
             </Grid>
             <Grid sm={6} md={4} item>
               <CustomCard
+                delay={2}
                 width={1024}
                 height={500}
                 image="/images/lpu-opt-finder.png"
@@ -73,6 +75,7 @@ const ProjectSection = ({ reff }) => {
 
             <Grid sm={6} md={4} item>
               <CustomCard
+                delay={3}
                 title="CLister (Android App)"
                 description={
                   "It is an android application which helps you to connect with the same database used by the web application (CLister.in). It was made so that you can interact with your tasks even on mobile device."
@@ -89,6 +92,7 @@ const ProjectSection = ({ reff }) => {
             </Grid>
             <Grid sm={6} md={4} item>
               <CustomCard
+                delay={4}
                 title="Personal Portfolio"
                 description={
                   "This is the website which you are visiting right now. It was earlier written in plain html and css but later shifter to ReactJs and Material UI"
@@ -105,6 +109,7 @@ const ProjectSection = ({ reff }) => {
             </Grid>
             <Grid sm={6} md={4} item>
               <CustomCard
+                delay={5}
                 title="Google Keep Clone"
                 description={
                   "A Google Keep Clone, which allows you to perform all the CRUD operations on the notes. the Firebase is used as the backend, so all the data is synced safely."
@@ -121,6 +126,7 @@ const ProjectSection = ({ reff }) => {
             </Grid>
             <Grid sm={6} md={4} item>
               <CustomCard
+                delay={6}
                 title="Movie Ticker Generator"
                 description={
                   "In this movie ticker generator, you can book tickets and also review them later. I have used STL for storing. Also, many of C++14 features has been used like range-based for loops and auto keyword."
