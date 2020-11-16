@@ -66,14 +66,16 @@ const TopSection = () => {
                 <Grid style={{ position: "absolute" }} item>
                   <TwitterIcon
                     onClick={() =>
-                      (window.location.href = "https://twitter.com/gauravcodes")
+                      window.open("https://twitter.com/gauravcodes", "_blank")
                     }
                     style={{ marginRight: 15, cursor: "pointer" }}
                   />
                   <GitHubIcon
                     onClick={() =>
-                      (window.location.href =
-                        "https://github.com/thegauravthakur")
+                      window.open(
+                        "https://github.com/thegauravthakur",
+                        "_blank"
+                      )
                     }
                     style={{ marginRight: 15, cursor: "pointer" }}
                   />

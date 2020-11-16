@@ -10,6 +10,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 import MenuList from "@material-ui/core/MenuList";
 import MenuItem from "@material-ui/core/MenuItem";
+import { useRouter } from "next/router";
+import { Grid } from "@material-ui/core";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -22,6 +24,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   const classes = useStyles();
   const matches = useMediaQuery("(min-width:600px)");
@@ -34,15 +37,27 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
             Gaurav Thakur
           </Typography>
           {!matches ? (
-            <IconButton
-              onClick={() => setOpen(!open)}
-              edge="start"
-              className={classes.menuButton}
-              color="inherit"
-              aria-label="menu button"
-            >
-              <MenuIcon />
-            </IconButton>
+            <div>
+              <Button
+                style={{ marginRight: 20 }}
+                variant={"outlined"}
+                onClick={() => {
+                  setOpen(false);
+                  window.open("resume.pdf");
+                }}
+                color="inherit"
+              >
+                Resume
+              </Button>
+              <IconButton
+                onClick={() => setOpen(!open)}
+                edge="start"
+                color="inherit"
+                aria-label="menu button"
+              >
+                <MenuIcon />
+              </IconButton>
+            </div>
           ) : (
             <div>
               <Button
@@ -89,6 +104,16 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
                 }}
               >
                 Skills
+              </Button>
+              <Button
+                style={{ marginLeft: 10 }}
+                variant={"outlined"}
+                onClick={() => {
+                  window.open("resume.pdf");
+                }}
+                color="inherit"
+              >
+                Resume
               </Button>
             </div>
           )}

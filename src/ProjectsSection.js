@@ -105,17 +105,18 @@ const ProjectSection = ({ reff }) => {
             </Grid>
             <Grid sm={6} md={4} item>
               <CustomCard
-                title="WhatsApp Bot"
+                title="Google Keep Clone"
                 description={
-                  "A simple WhatsApp bot which can spam any number with pre programmed messages with the help of the Selenium."
+                  "A Google Keep Clone, which allows you to perform all the CRUD operations on the notes. the Firebase is used as the backend, so all the data is synced safely."
                 }
-                footer={["Python", "Selenium"]}
+                footer={["ReactJs", "Firebase"]}
                 githubURL={
-                  "https://github.com/thegauravthakur/scripts/blob/master/whatsappbot.py"
+                  "https://github.com/thegauravthakur/google-keep-clone"
                 }
-                image="/images/whatsApp-bot.png"
-                width={1024}
-                height={500}
+                liveURL={"https://firebase-keep.vercel.app/"}
+                image="/images/keep-clone.png"
+                width={1920}
+                height={988}
               />
             </Grid>
             <Grid sm={6} md={4} item>
