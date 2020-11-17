@@ -104,7 +104,14 @@ export default function SkillSection({ reff }) {
               <Fade triggerOnce direction={"up"} cascade>
                 <Box borderRadius={16} {...defaultProps}>
                   <List dense>
-                    <ListItem button>
+                    <ListItem
+                      disableRipple
+                      style={{
+                        cursor: "default",
+                        backgroundColor: "transparent",
+                      }}
+                      button
+                    >
                       <ListItemAvatar>
                         <Avatar
                           alt={skill.name}
