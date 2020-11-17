@@ -14,11 +14,6 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 
-const StyledRating = withStyles({
-  iconFilled: {
-    color: "#ebebeb",
-  },
-})(Rating);
 export default function SkillSection({ reff }) {
   const defaultProps = {
     bgcolor: "#394867",
@@ -27,7 +22,11 @@ export default function SkillSection({ reff }) {
     border: 1,
     style: { width: "100%", maxWidth: 360, margin: "0 auto", marginBottom: 15 },
   };
-
+  const StyledRating = withStyles({
+    iconFilled: {
+      color: "#ebebeb",
+    },
+  })(Rating);
   const skills = [
     {
       name: "C++",
@@ -100,7 +99,7 @@ export default function SkillSection({ reff }) {
         <Grid item xs={1} />
         <Grid container item xs={10}>
           {skills.map((skill, index) => (
-            <Grid xs={12} sm={6} md={4} item>
+            <Grid key={skill.name} xs={12} sm={6} md={4} item>
               <Fade triggerOnce direction={"up"} cascade>
                 <Box borderRadius={16} {...defaultProps}>
                   <List dense>

@@ -88,8 +88,17 @@ const Profile = ({ reff }) => {
                 . I love doing competitive programming and building new stuff.
                 In the past few years, I've spent most of the time exploring
                 different sides of programming. I started with competitive
-                programming, although I didn't get much success in it. Later, I
-                shifted to development. I explored many frameworks like{" "}
+                programming, became 3-star coder on{" "}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={Styles.underline}
+                  href={"https://www.codechef.com/users/gaurav__thakur"}
+                >
+                  CodeChef
+                </a>
+                . Later, I started doing development also. I explored many
+                frameworks like{" "}
                 <a
                   target="_blank"
                   rel="noopener noreferrer"

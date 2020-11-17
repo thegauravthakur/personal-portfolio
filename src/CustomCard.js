@@ -69,13 +69,7 @@ const CustomCard = ({
       <Paper className={classes.root}>
         <Grid className={classes.gridStyle} direction="column" container>
           <Grid item>
-            <Image
-              objectFit={"fill"}
-              width={width}
-              height={height}
-              src={image}
-              alt="CLister"
-            />
+            <Image width={width} height={height} src={image} alt="CLister" />
           </Grid>
           <Grid item>
             <Typography className={classes.title} align="center">
