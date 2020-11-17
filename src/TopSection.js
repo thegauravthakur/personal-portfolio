@@ -63,8 +63,13 @@ const TopSection = () => {
                 </Grid>
               </Fade>
             </Grid>
-            <Fade triggerOnce direction={"up"} delay={1100}>
-              <Grid item container style={{ marginTop: 100 }}>
+            <Fade triggerOnce direction={"up"} delay={1200}>
+              <Grid
+                direction={"column"}
+                item
+                container
+                style={{ marginTop: 100 }}
+              >
                 <Grid item>
                   <Typography
                     style={{ borderBottom: "1px solid white" }}
@@ -73,31 +78,48 @@ const TopSection = () => {
                     Contact Me
                   </Typography>
                 </Grid>
-                <Grid item container>
-                  <Grid style={{ position: "absolute" }} item>
-                    <TwitterIcon
-                      onClick={() =>
-                        window.open("https://twitter.com/gauravcodes", "_blank")
-                      }
-                      style={{ marginRight: 15, cursor: "pointer" }}
-                    />
-                    <GitHubIcon
-                      onClick={() =>
-                        window.open(
-                          "https://github.com/thegauravthakur",
-                          "_blank"
-                        )
-                      }
-                      style={{ marginRight: 15, cursor: "pointer" }}
-                    />
-                    <EmailIcon
-                      onClick={() =>
-                        (window.location.href = "mailto:gthakur581@email.com")
-                      }
-                      style={{ cursor: "pointer" }}
-                    />
-                  </Grid>
-                </Grid>
+                <div>
+                  <div
+                    style={{
+                      position: "absolute",
+                      flexDirection: "row",
+                      display: "flex",
+                    }}
+                  >
+                    <Fade
+                      cascade
+                      triggerOnce
+                      direction={"up"}
+                      delay={1500}
+                      duration={500}
+                    >
+                      <TwitterIcon
+                        onClick={() =>
+                          window.open(
+                            "https://twitter.com/gauravcodes",
+                            "_blank"
+                          )
+                        }
+                        style={{ marginRight: 15, cursor: "pointer" }}
+                      />
+                      <GitHubIcon
+                        onClick={() =>
+                          window.open(
+                            "https://github.com/thegauravthakur",
+                            "_blank"
+                          )
+                        }
+                        style={{ marginRight: 15, cursor: "pointer" }}
+                      />
+                      <EmailIcon
+                        onClick={() =>
+                          (window.location.href = "mailto:gthakur581@email.com")
+                        }
+                        style={{ cursor: "pointer" }}
+                      />
+                    </Fade>
+                  </div>
+                </div>
               </Grid>
             </Fade>
           </Grid>

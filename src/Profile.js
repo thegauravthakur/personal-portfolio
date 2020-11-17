@@ -42,7 +42,7 @@ const Profile = ({ reff }) => {
         <Grid item container xs={10} justify={"space-between"}>
           <Grid sm={1} item />
           <Grid sm={2} item>
-            <Fade delay={600} duration={600} triggerOnce direction={"up"}>
+            <Fade delay={200} triggerOnce direction={"up"}>
               <div hidden={!matches} className={styles.mobileImage}>
                 <Image
                   style={{ border: "5px solid black" }}
@@ -61,7 +61,7 @@ const Profile = ({ reff }) => {
             <Fade triggerOnce direction={"up"}>
               <Typography className={styles.title}>About Me</Typography>
             </Fade>
-            <Fade duration={600} triggerOnce direction={"up"}>
+            <Fade triggerOnce direction={"up"}>
               <div hidden={matches} className={styles.mobileImage}>
                 <Image
                   layout={"responsive"}
@@ -73,7 +73,7 @@ const Profile = ({ reff }) => {
                 />
               </div>
             </Fade>
-            <Fade duration={600} delay={600} triggerOnce direction={"up"}>
+            <Fade delay={300} triggerOnce direction={"up"}>
               <Typography className={styles.description}>
                 Hi, my name is Gaurav Thakur. Currently, I'm doing my BTech in
                 Computer Science from{" "}
