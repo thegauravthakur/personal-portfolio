@@ -13,6 +13,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import { useRouter } from "next/router";
 import { Grid } from "@material-ui/core";
 import { Fade } from "react-awesome-reveal";
+import Collapse from "@material-ui/core/Collapse";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -25,7 +26,6 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
-  const router = useRouter();
   const [open, setOpen] = useState(false);
   const classes = useStyles();
   const matches = useMediaQuery("(min-width:600px)");
@@ -76,7 +76,6 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
               >
                 About
               </Button>
-
               <Button
                 aria-label="this button will take you to project section"
                 color="inherit"
@@ -122,48 +121,49 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
             </Fade>
           )}
         </Toolbar>
-
-        <MenuList hidden={!open} id="menu-list-grow">
-          <MenuItem
-            onClick={() => {
-              setOpen(false);
-              setTimeout(() => {
-                window.scrollTo({
-                  behavior: "smooth",
-                  top: profileRef.current.offsetTop,
-                });
-              }, 10);
-            }}
-          >
-            About
-          </MenuItem>
-          <MenuItem
-            onClick={() => {
-              setOpen(false);
-              setTimeout(() => {
-                window.scrollTo({
-                  behavior: "smooth",
-                  top: projectRef.current.offsetTop,
-                });
-              }, 10);
-            }}
-          >
-            Projects
-          </MenuItem>
-          <MenuItem
-            onClick={() => {
-              setOpen(false);
-              setTimeout(() => {
-                window.scrollTo({
-                  behavior: "smooth",
-                  top: skillRef.current.offsetTop,
-                });
-              }, 10);
-            }}
-          >
-            Skills
-          </MenuItem>
-        </MenuList>
+        <Collapse in={open}>
+          <MenuList id="menu-list-grow">
+            <MenuItem
+              onClick={() => {
+                setOpen(false);
+                setTimeout(() => {
+                  window.scrollTo({
+                    behavior: "smooth",
+                    top: profileRef.current.offsetTop,
+                  });
+                }, 10);
+              }}
+            >
+              About
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                setOpen(false);
+                setTimeout(() => {
+                  window.scrollTo({
+                    behavior: "smooth",
+                    top: projectRef.current.offsetTop,
+                  });
+                }, 10);
+              }}
+            >
+              Projects
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                setOpen(false);
+                setTimeout(() => {
+                  window.scrollTo({
+                    behavior: "smooth",
+                    top: skillRef.current.offsetTop,
+                  });
+                }, 10);
+              }}
+            >
+              Skills
+            </MenuItem>
+          </MenuList>
+        </Collapse>
       </AppBar>
     </div>
   );
