@@ -58,13 +58,7 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
               </IconButton>
             </Fade>
           ) : (
-            <Fade
-              triggerOnce
-              direction={"down"}
-              cascade
-              damping={100}
-              duration={100}
-            >
+            <Fade triggerOnce direction={"down"} cascade duration={500}>
               <Button
                 aria-label="this button will take you to about section"
                 color="inherit"
