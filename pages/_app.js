@@ -5,8 +5,11 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../src/theme";
 import "../src/styles.css";
+import * as gtag from "../lib/gtag";
+import { useRouter } from "next/router";
 
 export default function MyApp(props) {
+  const router = useRouter();
   const { Component, pageProps } = props;
 
   React.useEffect(() => {
@@ -16,6 +19,15 @@ export default function MyApp(props) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
   }, []);
+  React.useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <React.Fragment>
