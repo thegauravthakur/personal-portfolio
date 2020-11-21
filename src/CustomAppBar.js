@@ -10,8 +10,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 import MenuList from "@material-ui/core/MenuList";
 import MenuItem from "@material-ui/core/MenuItem";
-import { useRouter } from "next/router";
-import { Grid } from "@material-ui/core";
 import { Fade } from "react-awesome-reveal";
 import Collapse from "@material-ui/core/Collapse";
 
@@ -60,7 +58,13 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
               </IconButton>
             </Fade>
           ) : (
-            <Fade triggerOnce direction={"down"} cascade duration={500}>
+            <Fade
+              triggerOnce
+              direction={"down"}
+              cascade
+              damping={100}
+              duration={100}
+            >
               <Button
                 aria-label="this button will take you to about section"
                 color="inherit"
@@ -123,45 +127,47 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
         </Toolbar>
         <Collapse in={open}>
           <MenuList id="menu-list-grow">
-            <MenuItem
-              onClick={() => {
-                setOpen(false);
-                setTimeout(() => {
-                  window.scrollTo({
-                    behavior: "smooth",
-                    top: profileRef.current.offsetTop,
-                  });
-                }, 10);
-              }}
-            >
-              About
-            </MenuItem>
-            <MenuItem
-              onClick={() => {
-                setOpen(false);
-                setTimeout(() => {
-                  window.scrollTo({
-                    behavior: "smooth",
-                    top: projectRef.current.offsetTop,
-                  });
-                }, 10);
-              }}
-            >
-              Projects
-            </MenuItem>
-            <MenuItem
-              onClick={() => {
-                setOpen(false);
-                setTimeout(() => {
-                  window.scrollTo({
-                    behavior: "smooth",
-                    top: skillRef.current.offsetTop,
-                  });
-                }, 10);
-              }}
-            >
-              Skills
-            </MenuItem>
+            <Fade duration={500} direction={"down"} cascade>
+              <MenuItem
+                onClick={() => {
+                  setOpen(false);
+                  setTimeout(() => {
+                    window.scrollTo({
+                      behavior: "smooth",
+                      top: profileRef.current.offsetTop,
+                    });
+                  }, 10);
+                }}
+              >
+                About
+              </MenuItem>
+              <MenuItem
+                onClick={() => {
+                  setOpen(false);
+                  setTimeout(() => {
+                    window.scrollTo({
+                      behavior: "smooth",
+                      top: projectRef.current.offsetTop,
+                    });
+                  }, 10);
+                }}
+              >
+                Projects
+              </MenuItem>
+              <MenuItem
+                onClick={() => {
+                  setOpen(false);
+                  setTimeout(() => {
+                    window.scrollTo({
+                      behavior: "smooth",
+                      top: skillRef.current.offsetTop,
+                    });
+                  }, 10);
+                }}
+              >
+                Skills
+              </MenuItem>
+            </Fade>
           </MenuList>
         </Collapse>
       </AppBar>
