@@ -45,7 +45,7 @@ const ProjectSection = ({ reff }) => {
               <CustomCard
                 delay={1}
                 width={1897}
-                height={990}
+                height={988}
                 title="CLister (Web App)"
                 description={
                   "CLister will make you more organized and productive. You can manage all your related tasks in sections and create different sections for a different type of chores."
@@ -59,8 +59,8 @@ const ProjectSection = ({ reff }) => {
             <Grid sm={6} md={4} item>
               <CustomCard
                 delay={2}
-                width={1024}
-                height={500}
+                width={1897}
+                height={988}
                 image="/images/lpu-opt-finder.png"
                 githubURL={
                   "https://github.com/thegauravthakur/lpu-OPT-Brute-force-attack"
@@ -86,8 +86,8 @@ const ProjectSection = ({ reff }) => {
                 liveURL={"https://bit.ly/clister"}
                 footer={["React Native"]}
                 image="/images/clister-android-app.png"
-                width={1024}
-                height={500}
+                width={1897}
+                height={988}
               />
             </Grid>
             <Grid sm={6} md={4} item>
@@ -109,6 +109,21 @@ const ProjectSection = ({ reff }) => {
             </Grid>
             <Grid sm={6} md={4} item>
               <CustomCard
+                delay={6}
+                title="Bhaga Sidh Furniture Industry"
+                description={
+                  "It was a website for a local furniture store to showcase their products. I built this gorgeous website with Tailwindcss and NextJs"
+                }
+                githubURL={"https://github.com/thegauravthakur/bsfi"}
+                liveURL={"https://bhagasidhfurniture.com"}
+                footer={["Tailwindcss", "NextJs"]}
+                image="/images/bsfi.png"
+                width={1897}
+                height={988}
+              />
+            </Grid>
+            <Grid sm={6} md={4} item>
+              <CustomCard
                 delay={5}
                 title="Google Keep Clone"
                 description={
@@ -120,24 +135,8 @@ const ProjectSection = ({ reff }) => {
                 }
                 liveURL={"https://firebase-keep.vercel.app/"}
                 image="/images/keep-clone.png"
-                width={1920}
+                width={1897}
                 height={988}
-              />
-            </Grid>
-            <Grid sm={6} md={4} item>
-              <CustomCard
-                delay={6}
-                title="Movie Ticker Generator"
-                description={
-                  "In this movie ticker generator, you can book tickets and also review them later. I have used STL for storing. Also, many of C++14 features has been used like range-based for loops and auto keyword."
-                }
-                githubURL={
-                  "https://github.com/thegauravthakur/movieTicketGenerator"
-                }
-                footer={["C++"]}
-                image="/images/movie-ticket-generator.png"
-                height={500}
-                width={1024}
               />
             </Grid>
           </Grid>
