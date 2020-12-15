@@ -64,6 +64,16 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
                 color="inherit"
                 onClick={() => {
                   setOpen(false);
+                  window.open("https://blog.gauravthakur.in", "_self");
+                }}
+              >
+                Blog
+              </Button>
+              <Button
+                aria-label="this button will take you to about section"
+                color="inherit"
+                onClick={() => {
+                  setOpen(false);
                   setTimeout(() => {
                     window.scrollTo({
                       behavior: "smooth",
@@ -121,6 +131,14 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
         <Collapse in={open}>
           <MenuList id="menu-list-grow">
             <Fade duration={500} direction={"down"} cascade>
+              <MenuItem
+                onClick={() => {
+                  setOpen(false);
+                  window.open("https://blog.gauravthakur.in", "_self");
+                }}
+              >
+                Blog
+              </MenuItem>
               <MenuItem
                 onClick={() => {
                   setOpen(false);
