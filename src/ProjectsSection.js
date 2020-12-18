@@ -61,15 +61,13 @@ const ProjectSection = ({ reff }) => {
                 delay={2}
                 width={1897}
                 height={988}
-                image="/images/lpu-opt-finder.png"
-                githubURL={
-                  "https://github.com/thegauravthakur/lpu-OPT-Brute-force-attack"
-                }
-                title="LPU Opt Finder"
+                image="/images/blog.png"
+                githubURL={"https://github.com/thegauravthakur/blog"}
+                title="Blog Website"
                 description={
-                  "This was a fun project in which I used the brute-force technique to find the password of OPTs as they LPU used the same passwords repeatedly."
+                  "This is my blog built with firebase as backend where I occasionally write articles. There, I share my knowledge about different tech stack with the world. "
                 }
-                footer={["Selenium", "Python"]}
+                footer={["Next.Js", "Firebase"]}
               />
             </Grid>
 
