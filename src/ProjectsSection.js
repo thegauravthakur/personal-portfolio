@@ -63,7 +63,8 @@ const ProjectSection = ({ reff }) => {
                 height={988}
                 image="/images/blog.png"
                 githubURL={"https://github.com/thegauravthakur/blog"}
-                title="Blog Website"
+                liveURL={"https://blog.gauravthakur.in"}
+                title="Blog Site"
                 description={
                   "This is my blog built with firebase as backend where I occasionally write articles. There, I share my knowledge about different tech stack with the world. "
                 }
