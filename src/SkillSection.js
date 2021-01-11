@@ -100,7 +100,12 @@ export default function SkillSection({ reff }) {
         <Grid container item xs={10}>
           {skills.map((skill, index) => (
             <Grid key={skill.name} xs={12} sm={6} md={4} item>
-              <Fade triggerOnce direction={"up"} cascade>
+              <Fade
+                delay={index < 3 ? 50 : 500}
+                triggerOnce
+                direction={"up"}
+                cascade
+              >
                 <Box borderRadius={16} {...defaultProps}>
                   <List dense>
                     <ListItem

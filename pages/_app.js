@@ -7,7 +7,7 @@ import theme from "../src/theme";
 import "../src/styles.css";
 import * as gtag from "../lib/gtag";
 import { useRouter } from "next/router";
-
+import "../styles/index.css";
 export default function MyApp(props) {
   const router = useRouter();
   const { Component, pageProps } = props;

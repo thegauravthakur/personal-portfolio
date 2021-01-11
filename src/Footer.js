@@ -17,7 +17,7 @@ const Footer = () => {
     >
       <Grid container direction={"column"} alignItems={"center"}>
         <Grid item container justify={"center"} style={{}}>
-          <div style={{ borderBottom: "1px solid white" }}>
+          <div style={{ borderBottom: "1px dotted white", paddingBottom: 7 }}>
             <TwitterIcon
               color={"secondary"}
               onClick={() =>

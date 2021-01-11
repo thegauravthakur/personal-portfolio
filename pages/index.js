@@ -7,6 +7,7 @@ import SkillSection from "../src/SkillSection";
 import ProjectSection from "../src/ProjectsSection";
 import Footer from "../src/Footer";
 import ScrollToTop from "../src/ScrollToTop";
+import ContactSection from "../src/ContactSection";
 
 const Index = (props) => {
   const profileRef = useRef();
@@ -33,6 +34,7 @@ const Index = (props) => {
           <Profile reff={profileRef} />
           <SkillSection reff={skillRef} />
           <ProjectSection reff={projectRef} />
+          <ContactSection />
           <Footer />
         </Grid>
       </Grid>

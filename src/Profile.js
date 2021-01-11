@@ -58,10 +58,8 @@ const Profile = ({ reff }) => {
           </Grid>
           <Grid sm={1} item />
           <Grid sm={7} item>
-            <Fade triggerOnce direction={"up"}>
+            <Fade triggerOnce direction={"up"} cascade>
               <Typography className={styles.title}>About Me</Typography>
-            </Fade>
-            <Fade triggerOnce direction={"up"}>
               <div hidden={matches} className={styles.mobileImage}>
                 <Image
                   layout={"responsive"}
