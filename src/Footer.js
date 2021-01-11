@@ -4,6 +4,7 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/Email";
 import Link from "@material-ui/core/Link";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 const Footer = () => {
   return (
@@ -30,6 +31,13 @@ const Footer = () => {
                 window.open("https://github.com/thegauravthakur", "_blank")
               }
               style={{ marginRight: 15, cursor: "pointer" }}
+            />
+            <LinkedInIcon
+              style={{ marginRight: 15, cursor: "pointer" }}
+              onClick={() =>
+                window.open("https://linkedin.com/in/gauravcodes", "_blank")
+              }
+              color={"secondary"}
             />
             <EmailIcon
               color={"secondary"}

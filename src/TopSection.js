@@ -7,6 +7,7 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/Email";
 import { Fade } from "react-awesome-reveal";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 const TopSection = () => {
   const height = use100vh();
@@ -106,6 +107,15 @@ const TopSection = () => {
                         onClick={() =>
                           window.open(
                             "https://github.com/thegauravthakur",
+                            "_blank"
+                          )
+                        }
+                        style={{ marginRight: 15, cursor: "pointer" }}
+                      />
+                      <LinkedInIcon
+                        onClick={() =>
+                          window.open(
+                            "https://linkedin.com/in/gauravcodes",
                             "_blank"
                           )
                         }

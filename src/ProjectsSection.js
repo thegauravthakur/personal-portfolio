@@ -46,13 +46,13 @@ const ProjectSection = ({ reff }) => {
                 delay={1}
                 width={1897}
                 height={988}
-                title="CLister (Web App)"
+                title="CLister"
                 description={
-                  "CLister will make you more organized and productive. You can manage all your related tasks in sections and create different sections for a different type of chores."
+                  "CLister will make you more organized and productive. You can manage all your related tasks in sections and create different sections for a different type of chores. For a mobile device, you can download our android application."
                 }
                 githubURL={"https://github.com/thegauravthakur/clister-reactjs"}
                 liveURL={"https://clister.in"}
-                footer={["NextJs, ReactJs", "firebase"]}
+                footer={["NextJs, ReactJs", "React Native", "firebase"]}
                 image="/images/clister-website.png"
               />
             </Grid>
@@ -75,16 +75,16 @@ const ProjectSection = ({ reff }) => {
             <Grid sm={6} md={4} item>
               <CustomCard
                 delay={3}
-                title="CLister (Android App)"
+                title="Everyday Journal"
                 description={
-                  "It is an android application which helps you to connect with the same database used by the web application (CLister.in). It was made so that you can interact with your tasks even on mobile device."
+                  "It is a journal application where you can write your daily happenings in a timeline manner. All the data is backed up to the cloud. For a mobile device, you can download our android application."
                 }
                 githubURL={
-                  "https://github.com/thegauravthakur/react-native-clister"
+                  "https://github.com/thegauravthakur/Personal-Journal"
                 }
-                liveURL={"https://bit.ly/clister"}
-                footer={["React Native"]}
-                image="/images/clister-android-app.png"
+                liveURL={"https://journal.gauravthakur.in"}
+                footer={["ReactJs, Firebase"]}
+                image="/images/diary.png"
                 width={1897}
                 height={988}
               />
