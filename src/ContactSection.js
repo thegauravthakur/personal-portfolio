@@ -110,7 +110,7 @@ const ContactSection = () => {
             ) : null}
             <form onSubmit={onSubmitHandler}>
               <Fade
-                duration={400}
+                duration={700}
                 triggerOnce
                 direction={"up"}
                 big={false}

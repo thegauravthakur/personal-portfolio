@@ -64,7 +64,7 @@ const CustomCard = ({
       style={{ height: "100%" }}
       triggerOnce
       direction={"up"}
-      delay={delay * 100}
+      delay={delay * 50}
     >
       <Paper className={classes.root}>
         <Grid className={classes.gridStyle} direction="column" container>
