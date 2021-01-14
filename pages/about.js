@@ -1,7 +1,6 @@
-import React from 'react';
-import Profile from '../src/Profile';
-import CustomAppBar from '../src/CustomAppBar';
-import { Grid } from '@material-ui/core';
+import React from "react";
+import CustomAppBar from "../src/CustomAppBar";
+import { Grid } from "@material-ui/core";
 
 const About = () => {
   return (
@@ -9,7 +8,6 @@ const About = () => {
       <Grid item />
       <Grid item container>
         <CustomAppBar />
-
       </Grid>
       <Grid item />
     </Grid>

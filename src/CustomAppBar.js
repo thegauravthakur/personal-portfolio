@@ -115,6 +115,7 @@ export default function CustomAppBar({ profileRef, projectRef, skillRef }) {
               >
                 Skills
               </Button>
+
               <Button
                 style={{ marginLeft: 10 }}
                 variant={"outlined"}

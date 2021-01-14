@@ -9,7 +9,6 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 import Avatar from "@material-ui/core/Avatar";
 import List from "@material-ui/core/List";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";

@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import style from "../styles/ContactSection.module.css";
-import {
-  CircularProgress,
-  Grid,
-  LinearProgress,
-  TextareaAutosize,
-  TextField,
-} from "@material-ui/core";
+import { CircularProgress } from "@material-ui/core";
 import { Fade } from "react-awesome-reveal";
 
 const ContactSection = () => {

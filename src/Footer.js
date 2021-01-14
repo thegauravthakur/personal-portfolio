@@ -59,15 +59,15 @@ const Footer = () => {
               color: "#adadad",
             }}
           >
-            © 2020 Copyright:
+            © 2020 Copyright:{" "}
             <Link
               href={"https://gauravthakur.in"}
               target="_blank"
               rel="noopener noreferrer"
               color={"textPrimary"}
             >
-              <b> Gaurav Thakur </b>
-            </Link>
+              <b>Gaurav Thakur</b>
+            </Link>{" "}
             | Made with
             <span style={{ color: "red", fontSize: "22px" }}> ❤ </span> in India
           </Typography>
