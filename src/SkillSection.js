@@ -12,7 +12,12 @@ import List from "@material-ui/core/List";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
-
+import {FaReact, FaNodeJs} from 'react-icons/fa';
+import {IoLogoJavascript} from 'react-icons/io';
+import {IoLogoFirebase} from 'react-icons/io5';
+import {GoFileCode} from 'react-icons/go';
+import {MdWeb} from "react-icons/md";
+import {DiMongodb, DiJavascript1} from 'react-icons/di';
 export default function SkillSection({ reff }) {
   const defaultProps = {
     bgcolor: "#394867",
@@ -28,47 +33,76 @@ export default function SkillSection({ reff }) {
   })(Rating);
   const skills = [
     {
-      name: "C++",
-      imageLink: "/icons/c++.png",
-      rating: 5,
+      name: "JavaScript",
+      Icon: IoLogoJavascript,
+      imageLink: "/icons/JavaScript.png",
+      rating: 4.5,
       width: 50,
       height: 50,
     },
-
     {
-      name: "JavaScript",
+      name: "ReactJS",
+      Icon: FaReact,
       imageLink: "/icons/JavaScript.png",
       rating: 4,
       width: 50,
       height: 50,
     },
     {
-      name: "C",
-      imageLink: "/icons/c.png",
-      rating: 5,
-      width: 64,
-      height: 64,
+      name: "C++",
+      Icon: GoFileCode,
+      imageLink: "/icons/JavaScript.png",
+      rating: 4,
+      width: 50,
+      height: 50,
     },
     {
-      name: "HTML",
-      imageLink: "/icons/html.png",
+      name: "HTML and CSS",
+      Icon: MdWeb,
+      imageLink: "/icons/JavaScript.png",
       rating: 3.5,
       width: 50,
       height: 50,
     },
     {
-      name: "ReactJs",
-      imageLink: "/icons/react.png",
-      rating: 4,
-      width: 100,
-      height: 100,
+      name: "NodeJS",
+      Icon: FaNodeJs,
+      imageLink: "/icons/JavaScript.png",
+      rating: 3.5,
+      width: 50,
+      height: 50,
+    },
+    {
+      name: "Firebase",
+      Icon: IoLogoFirebase,
+      imageLink: "/icons/JavaScript.png",
+      rating: 3.5,
+      width: 50,
+      height: 50,
+    },
+    {
+      name: "MongoDB",
+      Icon: DiMongodb,
+      imageLink: "/icons/JavaScript.png",
+      rating: 3,
+      width: 50,
+      height: 50,
+    },
+    {
+      name: "NextJS",
+      Icon: DiJavascript1,
+      imageLink: "/icons/JavaScript.png",
+      rating: 2.5,
+      width: 50,
+      height: 50,
     },
     {
       name: "React Native",
-      imageLink: "/icons/react.png",
-      rating: 3,
-      width: 100,
-      height: 100,
+      Icon: FaReact,
+      imageLink: "/icons/JavaScript.png",
+      rating: 2.5,
+      width: 50,
+      height: 50,
     },
   ];
   return (
@@ -120,11 +154,7 @@ export default function SkillSection({ reff }) {
                           alt={skill.name}
                           style={{ backgroundColor: "transparent" }}
                         >
-                          <Image
-                            src={skill.imageLink}
-                            height={skill.height}
-                            width={skill.width}
-                          />
+                          {<skill.Icon   color={'white'} />}
                         </Avatar>
                       </ListItemAvatar>
                       <ListItemText primary={skill.name} />

@@ -138,7 +138,42 @@ const ProjectSection = ({ reff }) => {
                 height={988}
               />
             </Grid>
+            <Grid sm={6} md={4} item>
+              <CustomCard
+                delay={5}
+                title="MERN Auth"
+                description={
+                  "An execution of login and signup flow implemented in the MERN stack with the social login/signup buttons. JWT tokens were used for authenticating users"
+                }
+                footer={["ReactJs", "MongoDB","NodeJS", "ExpressJS" ]}
+                githubURL={
+                  "https://github.com/thegauravthakur/auth-mern"
+                }
+                liveURL={"https://mern-auth.vercel.app/"}
+                image="/images/mern-auth.png"
+                width={1897}
+                height={988}
+              />
+            </Grid>
+            <Grid sm={6} md={4} item>
+              <CustomCard
+                delay={5}
+                title="Twitter Clone"
+                description={
+                  "A clone of Twitter's homepage created with the ReactJS and plain CSS. No external dependency/library was used."
+                }
+                footer={["ReactJs" ]}
+                githubURL={
+                  "https://github.com/thegauravthakur/twitter-clone"
+                }
+                liveURL={"https://twitter-clone-silk.vercel.app/"}
+                image="/images/twitter-clone.png"
+                width={1897}
+                height={988}
+              />
+            </Grid>
           </Grid>
+
         </div>
       </Grid>
       <Grid xs={1} sm={2} item />
