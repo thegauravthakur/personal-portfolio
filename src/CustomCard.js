@@ -17,14 +17,14 @@ const useStyle = makeStyles((theme) => ({
     height: "100%",
   },
   title: {
-    padding: "10px",
+    paddingTop: "10px",
     fontSize: "18px",
     fontFamily: "Fredoka One, cursive",
     color: "#394867",
   },
   description: {
     fontFamily: "Open Sans, serif",
-    padding: "9px",
+    padding: "0 9px 9px 9px",
     fontSize: "0.9rem",
     color: "black",
   },
@@ -36,6 +36,15 @@ const useStyle = makeStyles((theme) => ({
 
     textAlign: "center",
   },
+  btn: {
+    padding: 10,
+    "&:hover": {
+      backgroundColor: '#E5E7EB',
+    },
+    "&:focus": {
+      outline: 'none',
+    }
+  }
 }));
 
 const CustomCard = ({
@@ -79,6 +88,7 @@ const CustomCard = ({
               {githubURL ? (
                 <Grid item>
                   <IconButton
+                    className={classes.btn}
                     aria-label={"launch the project"}
                     onClick={() => window.open(githubURL, "_blank")}
                     size={"small"}
@@ -90,6 +100,7 @@ const CustomCard = ({
               {liveURL ? (
                 <Grid item>
                   <IconButton
+                    className={classes.btn}
                     aria-label={"launch the project"}
                     onClick={() => window.open(liveURL, "_blank")}
                     size={"small"}
