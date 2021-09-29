@@ -68,7 +68,7 @@ const Footer = () => {
               color: '#adadad',
             }}
           >
-            © 2020 Copyright:{' '}
+            © 2021 Copyright:{' '}
             <Link
               href={'https://gauravthakur.in'}
               target="_blank"

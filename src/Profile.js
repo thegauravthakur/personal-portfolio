@@ -46,10 +46,9 @@ const Profile = ({ reff }) => {
               <div hidden={!matches} className={styles.mobileImage}>
                 <Image
                   style={{ border: "5px solid black" }}
-                  layout={"responsive"}
-                  width={1494}
-                  height={1662}
-                  src={"/images/profileImage.jpg"}
+                  width={1300}
+                  height={1300}
+                  src={"/images/profileImage.png"}
                   className={styles.mobileImage}
                   alt={""}
                 />
@@ -63,9 +62,9 @@ const Profile = ({ reff }) => {
               <div hidden={matches} className={styles.mobileImage}>
                 <Image
                   layout={"responsive"}
-                  width={1494}
-                  height={1662}
-                  src={"/images/profileImage.jpg"}
+                  width={1300}
+                  height={1300}
+                  src={"/images/profileImage.png"}
                   className={styles.mobileImage}
                   alt={""}
                 />
