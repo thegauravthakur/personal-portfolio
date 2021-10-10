@@ -88,7 +88,6 @@ export default function MyApp(props) {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <ThemeProvider theme={theme}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
