@@ -43,6 +43,36 @@ const ProjectSection = ({ reff }) => {
           >
             <Grid sm={6} md={4} item>
               <CustomCard
+                  delay={2}
+                  width={1897}
+                  height={988}
+                  image="/images/blog.png"
+                  githubURL={"https://github.com/thegauravthakur/blog"}
+                  liveURL={"https://blog.gauravthakur.in"}
+                  title="Blog Site"
+                  description={
+                    "This is my blog built with firebase as backend where I occasionally write articles. There, I share my knowledge about different tech stack with the world. "
+                  }
+                  footer={["Next.Js", "Firebase"]}
+              />
+            </Grid>
+            <Grid sm={6} md={4} item>
+              <CustomCard
+                  delay={2}
+                  width={1897}
+                  height={988}
+                  image="/images/IndexingLife.png"
+                  githubURL={"https://github.com/thegauravthakur/journal-native"}
+                  liveURL={"tinyurl.com/indexinglife"}
+                  title="Indexing Life"
+                  description={
+                    "A journal application created using React Native where a user can write their daily happenings in a timeline manner."
+                  }
+                  footer={["React Native"]}
+              />
+            </Grid>
+            <Grid sm={6} md={4} item>
+              <CustomCard
                 delay={1}
                 width={1897}
                 height={988}
@@ -56,22 +86,6 @@ const ProjectSection = ({ reff }) => {
                 image="/images/clister-website.png"
               />
             </Grid>
-            <Grid sm={6} md={4} item>
-              <CustomCard
-                delay={2}
-                width={1897}
-                height={988}
-                image="/images/blog.png"
-                githubURL={"https://github.com/thegauravthakur/blog"}
-                liveURL={"https://blog.gauravthakur.in"}
-                title="Blog Site"
-                description={
-                  "This is my blog built with firebase as backend where I occasionally write articles. There, I share my knowledge about different tech stack with the world. "
-                }
-                footer={["Next.Js", "Firebase"]}
-              />
-            </Grid>
-
             <Grid sm={6} md={4} item>
               <CustomCard
                 delay={3}
