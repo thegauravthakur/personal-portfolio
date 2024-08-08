@@ -1,12 +1,11 @@
 import Image from "next/image";
-import profile from "./profile-cropped.jpg";
 
 export default function Home() {
   return (
     <div className="min-h-[100dvh] flex justify-center items-center">
       <div className="m-5 flex items-start gap-10 flex-col sm:flex-row">
         <Image
-          src={profile}
+          src='/profile-photo.jpeg'
           alt="Gaurav Thakur"
           width={130}
           height={130}
